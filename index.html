@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <title>card</title>
+    <link rel="stylesheet" href="src/sheCodesPlusWeek5.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <form class="search-form" id="search-form">
+          <div class="row">
+            <div class="col-3">
+              <input
+                type="search"
+                placeholder="Type a city"
+                autocomplete="off"
+                autofocus="on"
+                id="search_input_text"
+                class="form-control shadow-sm"
+              />
+            </div>
+
+            <div class="col-3">
+              <input
+                type="submit"
+                value="Search"
+                class="form-control btn btn-primary shadow-sm"
+              />
+            </div>
+            <div class="col-4">
+              <input
+                type="submit"
+                value="Current Location"
+                class="form-control btn btn-primary shadow-sm"
+                id="current_location"
+              />
+            </div>
+          </div>
+        </form>
+        <h1 id="city">Sunnyvale CA, USA</h1>
+        <h6>Display Current Location's longitude and Latitude</h6>
+        <ul>
+          <li id="date"></li>
+          <li>Clear</li>
+        </ul>
+
+        <div class="row">
+          <div class="col-6">
+            <div class="clearfix">
+              <div class="float-left">
+                <span class="temperature" id="temperature"><h3>19°C</h3></span>
+              </div>
+            </div>
+          </div>
+          <div class="col-6">
+            <ul>
+              <li>Humidity: 77%</li>
+              <li>Wind: 8m/h</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="src/sheCodesPlusWeek5.js"></script>
+  </body>
+</html>
